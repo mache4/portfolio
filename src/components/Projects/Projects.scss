@@ -1,0 +1,169 @@
+.projects {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 5% 20px;
+    overflow: hidden;
+
+    &>h1 {
+        display: none;
+        position: relative;
+        text-align: center;
+        font-size: 2.25rem;
+        text-transform: uppercase;
+        margin: 50px 0;
+        background-color: #fff;
+    }
+
+    .project-picker {
+        text-align: center;
+        padding: 50px 0;
+        border-top: 2px solid #000;
+
+        button {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-family: inherit;
+
+            width: 300px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 4px solid #eee;
+            cursor: pointer;
+            transition: border-bottom-color 0.4s ease;
+            padding-bottom: 10px;
+
+            &:hover {
+                border-bottom-color: #ccc;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .github-btn {
+        width: 250px;
+        padding: 15px 25px;
+        margin: 20px auto;
+
+        font-size: 1.75rem;
+        font-family: inherit;
+        text-transform: uppercase;
+        border: 1px solid #071C39;
+        letter-spacing: 1px;
+        color: #071C39;
+        background-color: transparent;
+
+        transition: 0.3s ease;
+        cursor: pointer;
+
+        i {
+            color: #071C39;
+        }
+
+        &:hover {
+            background-color: #071C39;
+            color: #fff;
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+
+    .switch-projects-btn {
+        display: none;
+        position: absolute;
+        bottom: 8px;
+        width: 375px;
+        padding: 15px 25px;
+        margin: 20px auto;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #071C39;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .switch-projects-react-btn {
+        left: 2.5%;
+    }
+
+    .switch-projects-web-btn {
+        right: 2.5%;
+    }
+}
+
+////////////////////////////////////////////
+// MEDIA
+////////////////////////////////////////////
+
+@media (max-width: 1250px) {
+    .projects {
+        .switch-projects-btn {
+            width: 265px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .projects {
+        .switch-projects-btn {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .projects {
+        .project-picker {
+            padding: 0;
+
+            button {
+                display: none;
+            }
+        }
+
+        &>h1 {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .projects {
+        &>h1 {
+            font-size: 2rem;
+            margin: 25px 0;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .projects {
+        .github-btn {
+            width: 150px;
+            font-size: 1rem;
+            padding: 10px;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .projects {
+        &>h1 {
+            font-size: 1.8rem;
+        }
+    }
+}

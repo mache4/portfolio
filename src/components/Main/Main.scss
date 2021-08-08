@@ -1,0 +1,134 @@
+.main {
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    background-color: #071C39;
+
+    .title {
+        text-align: center;
+        padding: 0 25px;
+
+        &>span {
+            display: block;
+            margin-bottom: 10px;
+            color: #fff;
+
+            b {
+                color: inherit;
+            }
+        }
+
+        .title--1 {
+            font-size: 4.5rem;
+            font-weight: 600;
+        }
+
+        .title--2 {
+            font-size: 2rem;
+            font-weight: 200;
+            letter-spacing: 3px;
+            color: #7a869a;
+            font-weight: 300;
+
+            b {
+                color: #fff;
+            }
+        }
+
+        .view-projects-btn {
+            display: inherit;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px;
+            width: 250px;
+            font-size: 1.5rem;
+            font-family: inherit;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background-color: #071C39;
+            color: #fff;
+            border: 1px solid #fff;
+            text-decoration: none;
+
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #fff;
+                color: #071C39;
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////
+// MEDIA
+////////////////////////////////////////////
+
+@media (max-width: 1270px) {
+    .main {
+        text-align: left;
+
+        .title {
+            max-width: 65%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 1270px) {
+    .main {
+        &>*:nth-child(1) {
+            flex: 1 1 60%;
+        }
+
+        &>*:nth-child(2) {
+            flex: 1 1 40%;
+        }
+    }
+}
+
+@media (max-height: 730px) {
+    .main {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 650px) {
+    .main {
+        padding-top: 10vh;
+        align-items: flex-start;
+
+        .title {
+            padding: 0;
+
+            .title--1 {
+                font-size: 2.25rem;
+            }
+
+            .title--2 {
+                font-size: 1rem;
+            }
+
+            .view-projects-btn {
+                font-size: 1.2rem;
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .main {
+        .title {
+            .view-projects-btn {
+                width: 175px;
+                font-size: 1rem;
+            }
+        }
+    }
+}

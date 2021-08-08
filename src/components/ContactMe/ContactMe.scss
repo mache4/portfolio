@@ -1,0 +1,58 @@
+.contact-me {
+    text-align: center;
+    background-color: #071C39;
+    color: #fff;
+    padding: 25px 5%;
+    // margin-bottom: 25px;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        color: #fff;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    form {
+        input {
+            display: block;
+            width: 50%;
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            border: none;
+            font-family: inherit;
+            margin: 15px auto;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        textarea {
+            display: block;
+            margin: 10px auto;
+            width: 50%;
+            height: 300px;
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            border: none;
+            font-family: inherit;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            font-family: inherit;
+        }
+    }
+}
+
+////////////////////////////////////////////
+// MEDIA
+////////////////////////////////////////////

@@ -1,0 +1,94 @@
+.about-me {
+    margin: 50px 5%;
+
+    padding: 40px 50px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+    background-color: #fff;
+
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+
+    h3 {
+        margin-top: 50px;
+        text-align: left;
+        line-height: 35px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    button {
+        margin-top: 20px;
+        margin-right: 20px;
+        padding: 5px 15px;
+
+        &:hover {
+            border-color: #071C39;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        a {
+            color: #071C39;
+            text-decoration: none;
+        }
+    }
+}
+
+////////////////////////////////////////////
+// MEDIA
+////////////////////////////////////////////
+
+@media (max-width: 1250px) {
+    .about-me {
+        h3 {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .about-me {
+        padding: 20px;
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1rem;
+            line-height: 30px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .about-me {
+        margin-top: 25px;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            margin-top: 25px;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .about-me {
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+}
