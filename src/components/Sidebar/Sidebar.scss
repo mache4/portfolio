@@ -28,20 +28,30 @@
                 font-size: 1.2rem;
                 text-decoration: none;
                 width: 200px;
-                margin: 20px;
+                margin: 20px 0;
                 padding: 10px;
                 cursor: pointer;
             }
         }
     }
 
-    i {
+    i.fa-times {
         color: #fff;
         font-size: 2.5rem;
         position: absolute;
         top: 0;
         right: 0;
         margin: 20px;
+        cursor: pointer;
+    }
+
+    i.fa-linkedin {
+        color: #fff;
+        font-size: 3rem;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%);
         cursor: pointer;
     }
 }
@@ -66,10 +76,14 @@
         ul {
             li {
                 a {
-                    width: 100px;
+                    width: 125px;
                     font-size: 0.8rem;
                 }
             }
+        }
+
+        i.fa-linkedin {
+            font-size: 2.5rem;
         }
     }
 }

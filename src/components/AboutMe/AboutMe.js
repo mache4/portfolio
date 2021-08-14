@@ -14,8 +14,10 @@ const AboutMe = (props) => {
                 so my
                 next step is to become a professional.
             </h3>
-            <button className="linkedin-btn btn" onClick={() => window.open('https://www.linkedin.com/in/branislav-rendulic-9b6411205/')} >LinkedIn</button>
-            <button className="resume-btn btn"><Link to="/resume">Resume</Link></button>
+            <div className="link-buttons">
+                <button className="linkedin-btn btn" onClick={() => window.open('https://www.linkedin.com/in/branislav-rendulic-9b6411205/')} >LinkedIn</button>
+                <button className="resume-btn btn"><Link to="/resume">Resume</Link></button>
+            </div>
         </div>
     );
 };

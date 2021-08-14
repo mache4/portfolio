@@ -2,53 +2,89 @@
     text-align: center;
     background-color: #071C39;
     color: #fff;
-    padding: 25px 5%;
+    padding: 25px 10%;
     // margin-bottom: 25px;
 
-    h1 {
+    .error {
+        font-weight: 500;
+        color: red;
+    }
+
+    &>h1 {
         font-size: 3rem;
         font-weight: 400;
         color: #fff;
         font-weight: 500;
         text-transform: uppercase;
+        margin-bottom: 25px;
     }
 
     form {
-        input {
-            display: block;
-            width: 50%;
-            font-size: 1.5rem;
-            padding: 5px 10px;
-            border: none;
-            font-family: inherit;
-            margin: 15px auto;
+        display: flex;
+        flex-direction: column;
 
-            &:focus {
-                outline: none;
+        .inputs {
+            input {
+                display: block;
+                background-color: transparent;
+                width: 65%;
+                font-size: 1.5rem;
+                padding: 5px 10px;
+                border: none;
+                font-family: inherit;
+                margin: 25px auto;
+                border-bottom: 1px solid #fff;
+                color: #fff;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: #7a869a;
+                }
             }
         }
 
         textarea {
+            background-color: transparent;
             display: block;
             margin: 10px auto;
-            width: 50%;
+            width: 65%;
             height: 300px;
             font-size: 1.5rem;
             padding: 5px 10px;
             border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
             font-family: inherit;
+            resize: none;
 
             &:focus {
                 outline: none;
             }
+
+            &::placeholder {
+                color: #7a869a;
+            }
+
         }
 
         button {
             display: block;
-            margin: 0 auto;
+            margin: 25px auto 0;
             font-size: 1.5rem;
             padding: 5px 10px;
             font-family: inherit;
+
+            background-color: #071C39;
+            color: #fff;
+            border-color: #fff;
+
+            &:hover {
+                background-color: #fff;
+                color: #071C39;
+            }
         }
     }
 }
@@ -56,3 +92,66 @@
 ////////////////////////////////////////////
 // MEDIA
 ////////////////////////////////////////////
+
+@media (max-width: 1000px) {
+    .contact-me {
+        form {
+            .inputs {
+                input {
+                    width: 80%;
+                    font-size: 1.25rem;
+                }
+            }
+
+            textarea {
+                width: 80%;
+                font-size: 1.25rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .contact-me {
+        &>h1 {
+            font-size: 2.5rem;
+        }
+
+        form {
+            button {
+                font-size: 1.25rem;
+                width: 125px;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-me {
+        .error {
+            font-size: 1.25rem;
+        }
+
+        &>h1 {
+            font-size: 2rem;
+        }
+
+        form {
+
+            .inputs input,
+            textarea {
+                font-size: 1rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .contact-me {
+        &>h1 {
+            font-size: 1.8rem;
+        }
+    }
+}

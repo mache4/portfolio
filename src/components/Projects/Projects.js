@@ -3,9 +3,11 @@ import ReactProjects from './ReactProjects/ReactProjects';
 import WebProjects from './WebProjects/WebProjects';
 import { useEffect, useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import styled from 'styled-components';
 
 const Projects = (props) => {
     const [active, setActive] = useState(true);
+
     const useWindowSize = () => {
         const [size, setSize] = useState(0);
         useEffect(() => {
@@ -34,23 +36,36 @@ const Projects = (props) => {
             setActive(false);
     };
 
+    const Button1 = styled.button`
+        border: none;
+        border-bottom: 4px solid ${active ? '#071C39' : '#eee'};
+
+        &:hover {
+            border-bottom-color: ${active ? 'inherit' : '#ccc'};
+        }
+    `;
+
+    const Button2 = styled.button`
+        border: none;
+        border-bottom: 4px solid ${!active ? '#071C39' : '#eee'};
+
+        &:hover {
+            border-bottom-color: ${active ? '#ccc' : 'inherit'};
+        }
+    `;
+
     return (
         <div className="projects section" id="projects">
             <h1>Projects</h1>
 
             <div className="project-picker">
-                <button
+                <Button1
                     className="btn-projects btn-projects-react"
-                    onClick={changeActiveHandler} style={{
-                        borderBottomColor: active ? '#071C39' : '#eee'
-                    }} >React
-                    Projects</button>
+                    onClick={changeActiveHandler}>React Projects</Button1>
 
-                <button
+                <Button2
                     className="btn-projects btn-projects-web"
-                    onClick={changeActiveHandler} style={{
-                        borderBottomColor: !active ? '#071C39' : '#eee'
-                    }}>Web Projects</button>
+                    onClick={changeActiveHandler}>Web Projects</Button2>
             </div>
             <ReactProjects show={active} />
             <WebProjects show={active} />

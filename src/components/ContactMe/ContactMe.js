@@ -1,6 +1,7 @@
 import './ContactMe.scss';
 import { useRef, useState } from 'react';
 import Modal from '../Modal/Modal';
+import emailjs from 'emailjs-com';
 
 const ContactMe = (props) => {
     const nameRef = useRef(null);
@@ -8,9 +9,6 @@ const ContactMe = (props) => {
     const messageRef = useRef(null);
 
     const [modal, setModal] = useState(false);
-    const [name, setName] = useState(null);
-    const [email, setEmail] = useState(null);
-    const [message, setMessage] = useState(null);
     const [error, setError] = useState('');
 
     const validateEmail = (email) => {
@@ -21,27 +19,24 @@ const ContactMe = (props) => {
     const submitHandler = (e) => {
         e.preventDefault();
         setError(null);
-        if (!emailRef.current.value)
-            return setError('Enter Your Email');
+        if (!nameRef.current.value || !emailRef.current.value || !messageRef.current.value)
+            return setError('Enter data');
 
-        if (validateEmail(emailRef.current.value))
-            setEmail(emailRef.current.value);
-        else
+        if (!validateEmail(emailRef.current.value))
             return setError('Unvalid Email');
 
-        if (messageRef.current.value)
-            setMessage(messageRef.current.value);
-        else
-            return setError('Enter Your Message');
-
-        if (nameRef.current.value)
-            setName(nameRef.current.value);
-        else
-            return setError('Enter Your Name');
+        emailjs.sendForm('service_v3pscrs', 'template_3vcdyk2', e.target, 'user_CbmryuvlGFIKy05fcYRNt')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
 
         toggleModal();
 
-        // OVDE SE SALJE PORUKA
+        nameRef.current.value = "";
+        emailRef.current.value = "";
+        messageRef.current.value = "";
     };
 
     const toggleModal = () => {
@@ -51,13 +46,15 @@ const ContactMe = (props) => {
 
     return (
         <div className="contact-me" id="contact-me">
-            <h2 style={{ color: 'red', opacity: error ? 1 : 0 }}>{error}.</h2>
             <h1>Contact me</h1>
+            <h2 className="error" style={{ opacity: error ? 1 : 0 }}>{error}.</h2>
             <form id="form" onSubmit={submitHandler}>
-                <input type="text" id="name" ref={nameRef} placeholder="Your Name" />
-                <input type="text" id="email" ref={emailRef} placeholder="Your Email" />
-                <textarea id="message" ref={messageRef} placeholder="Your Message"></textarea>
-                <button type="submit" className="send-btn btn" onClick={submitHandler}>SEND</button>
+                <div className="inputs">
+                    <input type="text" id="name" name="name" ref={nameRef} placeholder="Your Name" />
+                    <input type="email" id="email" name="email" ref={emailRef} placeholder="Your Email" />
+                </div>
+                <textarea id="message" name="message" ref={messageRef} placeholder="Your Message"></textarea>
+                <button type="submit" className="send-btn btn">SEND</button>
             </form>
             <Modal show={modal} />
         </div>

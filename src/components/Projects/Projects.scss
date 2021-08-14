@@ -24,18 +24,11 @@
             font-size: 1.5rem;
             text-transform: uppercase;
             font-family: inherit;
-
-            width: 300px;
             background-color: transparent;
-            border: none;
-            border-bottom: 4px solid #eee;
+            width: 300px;
             cursor: pointer;
             transition: border-bottom-color 0.4s ease;
             padding-bottom: 10px;
-
-            &:hover {
-                border-bottom-color: #ccc;
-            }
 
             &:focus {
                 outline: none;
@@ -125,10 +118,11 @@
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 682px) {
     .projects {
         .project-picker {
             padding: 0;
+            border-top: 0;
 
             button {
                 display: none;

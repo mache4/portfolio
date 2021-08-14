@@ -1,6 +1,5 @@
 import './App.scss';
 import { Route, Switch } from 'react-router-dom';
-import NavBar from './components/NavBar/NavBar';
 import Page from './components/Page/Page';
 
 const App = () => {
@@ -8,9 +7,6 @@ const App = () => {
         <Switch>
             <Route exact path="/" render={() => {
                 return <div className="app">
-                    <header>
-                        <NavBar />
-                    </header>
                     <Page />
                 </div>
             }} />
