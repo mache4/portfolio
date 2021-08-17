@@ -9,26 +9,26 @@ const ReactProjects = (props) => {
             description: 'React online market where you can create, log in or log out of an existing accout, set up your own cart, order it and see your order history.',
             tools: ['React.js', 'Redux.js', 'SASS', 'Authentication', 'Firebase'],
             image: 'shirts-project.png',
-            websiteURL: 'https://jovial-bassi-ef8fd7.netlify.app',
+            websiteURL: 'https://upbeat-johnson-4fd9e5.netlify.app',
             codeURL: 'https://github.com/mache1/shirts-project'
         },
         {
             id: 2,
+            title: 'Blogs Project',
+            description: 'Place where you can read someones post or create your own.',
+            tools: ['React.js', 'Redux.js', 'SASS', 'Firebase', 'styled-components'],
+            image: 'blogs-project.png',
+            websiteURL: 'https://stupefied-booth-0a1fb2.netlify.app',
+            codeURL: 'https://github.com/mache1/blogs-project'
+        },
+        {
+            id: 3,
             title: 'Cinema Project',
             description: 'App who is fetching Movie API and displaying its content. You can search for movies or see the most popular ones.',
             tools: ['React.js', 'Redux.js', 'SASS', 'API'],
             image: 'cinema-project.png',
             websiteURL: 'https://blissful-nobel-3f064d.netlify.app',
             codeURL: 'https://github.com/mache1/cinema-project'
-        },
-        {
-            id: 3,
-            title: 'React Project 3',
-            description: 'Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, nesciunt? Maiores voluptates, incidunt possimus molestiae, quod a dicta quia quos tempora officia suscipit dolorum enim.',
-            tools: [],
-            image: 'project.png',
-            websiteURL: '',
-            codeURL: ''
         }
     ]);
 

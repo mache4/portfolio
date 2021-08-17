@@ -5,15 +5,6 @@ const WebProjects = (props) => {
     const [projects] = useState([
         {
             id: 1,
-            title: 'Web Project 1',
-            description: 'Description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus ipsum harum, soluta cumque libero praesentium id nisi in dolores.',
-            tools: [],
-            image: 'project.png',
-            websiteURL: '',
-            codeURL: ''
-        },
-        {
-            id: 2,
             title: 'Music Player',
             description: 'Small app containing 3 songs which you can pause, play or set timer to. You can also switch between songs.',
             tools: ['HTML', 'CSS', 'JavaScript'],
@@ -22,13 +13,22 @@ const WebProjects = (props) => {
             codeURL: 'https://github.com/mache1/music-player'
         },
         {
-            id: 3,
-            title: 'My Custom Carousel',
-            description: 'Custom carousel I created for practice. Contains 3 dummy slides which you can switch between using prev and next buttons, or 3 dotts below.',
+            id: 2,
+            title: 'Tic Tac Toe',
+            description: 'Tic Tac Toe game created in JavaScript.',
             tools: ['HTML', 'CSS', 'JavaScript'],
-            image: 'my-custom-carousel.png',
-            websiteURL: '',
-            codeURL: ''
+            image: 'tic-tac-toe.png',
+            websiteURL: 'https://fervent-williams-6dc5a9.netlify.app',
+            codeURL: 'https://github.com/mache1/tic-tac-toe'
+        },
+        {
+            id: 3,
+            title: 'Dice Game',
+            description: 'JavaScript game based on rolling a dice. First player who gets the score of 20 wins.',
+            tools: ['HTML', 'CSS', 'JavaScript'],
+            image: 'dice-game.png',
+            websiteURL: 'https://naughty-benz-8b7b17.netlify.app',
+            codeURL: 'https://github.com/mache1/dice-game'
         }
     ]);
 
