@@ -14,6 +14,15 @@ const WebProjects = (props) => {
         },
         {
             id: 2,
+            title: 'Dice Game',
+            description: 'JavaScript game based on rolling a dice. First player who gets the score of 20 wins.',
+            tools: ['HTML', 'CSS', 'JavaScript'],
+            image: 'dice-game.png',
+            websiteURL: 'https://naughty-benz-8b7b17.netlify.app',
+            codeURL: 'https://github.com/mache1/dice-game'
+        },
+        {
+            id: 3,
             title: 'Tic Tac Toe',
             description: 'Tic Tac Toe game created in JavaScript.',
             tools: ['HTML', 'CSS', 'JavaScript'],
@@ -21,15 +30,6 @@ const WebProjects = (props) => {
             websiteURL: 'https://fervent-williams-6dc5a9.netlify.app',
             codeURL: 'https://github.com/mache1/tic-tac-toe'
         },
-        {
-            id: 3,
-            title: 'Dice Game',
-            description: 'JavaScript game based on rolling a dice. First player who gets the score of 20 wins.',
-            tools: ['HTML', 'CSS', 'JavaScript'],
-            image: 'dice-game.png',
-            websiteURL: 'https://naughty-benz-8b7b17.netlify.app',
-            codeURL: 'https://github.com/mache1/dice-game'
-        }
     ]);
 
     const useWindowSize = () => {
