@@ -8,7 +8,7 @@ const Sidebar = (props) => {
             transform: props.show ? 'translateX(0)' : 'translateX(100%)'
         }}>
             <i className="fas fa-times" onClick={props.clicked}></i>
-            <i className="fab fa-linkedin" onClick={() => window.open('https://www.linkedin.com/in/branislav-rendulic-9b6411205/')}></i>
+            <i className="fab fa-linkedin" onClick={() => window.open('https://www.linkedin.com/in/branislav-rendulić-9b6411205/')}></i>
             <ul>
                 <li className="nav__item">
                     <AnchorLink className="sidebar__nav__link nav__link btn"
