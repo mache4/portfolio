@@ -7,10 +7,10 @@ const AboutMe = (props) => {
             <h1>About me</h1>
             <h3>My name is Branislav, and I am 17 years old.
                 I've been
-                programming since 2017, when I first encountered C language. Since then I started learning new
+                programming since 2018, when I first encountered C language. Since then I started learning new
                 things,
                 like JavaScript, Python and C#. My knowledge and interest about web development has expanded over
-                years,
+                time,
                 so my
                 next step is to become a professional.
             </h3>
