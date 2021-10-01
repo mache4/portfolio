@@ -65,7 +65,7 @@ const Projects = (props) => {
 
                 <Button2
                     className="btn-projects btn-projects-web"
-                    onClick={changeActiveHandler}>Web Projects</Button2>
+                    onClick={changeActiveHandler}>Other Projects</Button2>
             </div>
             <ReactProjects show={active} />
             <WebProjects show={active} />
@@ -75,7 +75,7 @@ const Projects = (props) => {
                 <AnchorLink className="switch-projects-btn switch-projects-web-btn"
                     onClick={changeActiveHandler2}
                     href="#projects"
-                    style={{ display: active ? 'block' : 'none' }}>My Web Projects <i className="fas fa-arrow-right"></i></AnchorLink>
+                    style={{ display: active ? 'block' : 'none' }}>My Other Projects <i className="fas fa-arrow-right"></i></AnchorLink>
                 <AnchorLink className="switch-projects-btn switch-projects-react-btn"
                     onClick={changeActiveHandler2}
                     href="#projects"
