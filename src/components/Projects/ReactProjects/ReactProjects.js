@@ -10,16 +10,16 @@ const ReactProjects = (props) => {
             tools: ['React.js', 'Redux.js', 'SASS', 'Authentication', 'Firebase'],
             image: 'shirts-project.png',
             websiteURL: 'https://upbeat-johnson-4fd9e5.netlify.app',
-            codeURL: 'https://github.com/mache1/shirts-project'
+            codeURL: 'https://github.com/rendulicb/shirts-project'
         },
         {
             id: 2,
             title: 'Blogs Project',
-            description: 'Place where you can read someones post or create your own.',
-            tools: ['React.js', 'Redux.js', 'SASS', 'Firebase', 'styled-components'],
+            description: 'Nextjs app where you can read someones post or create your own.',
+            tools: ['Next.js', 'Redux.js', 'TypeScript', 'SASS', 'Firebase'],
             image: 'blogs-project.png',
-            websiteURL: 'https://stupefied-booth-0a1fb2.netlify.app',
-            codeURL: 'https://github.com/mache1/blogs-project'
+            websiteURL: 'https://blogs-project-nextjs.vercel.app',
+            codeURL: 'https://github.com/rendulicb/blogs-project-nextjs'
         },
         {
             id: 3,
@@ -28,7 +28,7 @@ const ReactProjects = (props) => {
             tools: ['React.js', 'Redux.js', 'SASS', 'API'],
             image: 'cinema-project.png',
             websiteURL: 'https://blissful-nobel-3f064d.netlify.app',
-            codeURL: 'https://github.com/mache1/cinema-project'
+            codeURL: 'https://github.com/rendulicb/cinema-project'
         }
     ]);
 
