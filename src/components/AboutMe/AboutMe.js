@@ -1,5 +1,6 @@
 import './AboutMe.scss';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import Pdf from '../../assets/Branislav-Rendulić-Resume.pdf';
 
 const AboutMe = (props) => {
     return (
@@ -16,7 +17,10 @@ const AboutMe = (props) => {
             </h3>
             <div className="link-buttons">
                 <button className="linkedin-btn btn" onClick={() => window.open('https://www.linkedin.com/in/branislav-rendulić-9b6411205/')} >LinkedIn</button>
-                <button className="resume-btn btn"><Link to="/resume">Resume</Link></button>
+                <button className="resume-btn btn">
+                    <a className="nav__link" href={Pdf} target="_blank">Resume</a>
+                    {/* <Link to="/resume">Resume</Link> */}
+                </button>
             </div>
         </div>
     );

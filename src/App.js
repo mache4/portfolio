@@ -10,10 +10,6 @@ const App = () => {
                     <Page />
                 </div>
             }} />
-
-            <Route exact path="/resume" render={() =>
-                <p style={{ fontFamily: 'sans-serif' }}>Resume is not ready yet :(</p>
-            } />
         </Switch>
     );
 }

@@ -70,7 +70,7 @@ const Projects = (props) => {
             <ReactProjects show={active} />
             <WebProjects show={active} />
 
-            <button className="github-btn" onClick={() => window.open('https://github.com/mache1')}>See More <i className="fab fa-github"></i></button>
+            <button className="github-btn" onClick={() => window.open('https://github.com/rendulicb')}>See More <i className="fab fa-github"></i></button>
             {(useWindowSize() > 1000) && <>
                 <AnchorLink className="switch-projects-btn switch-projects-web-btn"
                     onClick={changeActiveHandler2}
