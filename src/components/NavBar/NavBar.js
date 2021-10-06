@@ -24,7 +24,7 @@ const NavBar = (props) => {
                 <li className="nav__item"><AnchorLink className="nav__link" href="#contact-me">Contact</AnchorLink></li>
                 <li className="nav__item">
                     {/* <Link className="nav__link" to={Pdf}>Resume</Link> */}
-                    <a className="nav__link" href={Pdf} target="_blank">Resume</a>
+                    <a className="nav__link" rel="noreferrer" href={Pdf} target="_blank">Resume</a>
                 </li>
             </ul>
 
