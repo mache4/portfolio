@@ -31,7 +31,7 @@ const NavBar = (props) => {
             <div className="mobile-nav">
                 <ul>
                     <li><i
-                        onClick={() => window.open('https://github.com/rendulicb')}
+                        onClick={() => window.open('https://github.com/mache4')}
                         className="fab fa-github"></i></li>
                     <li><i className="sidebar-btn fas fa-bars" onClick={showSidebar}></i></li>
                 </ul>
