@@ -1,3 +1,3 @@
-## Portfolio - React
+# Portfolio - React
 
-### This is my portfolio created in React.
+My portfolio made in React.
