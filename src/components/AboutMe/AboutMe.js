@@ -6,7 +6,7 @@ const AboutMe = (props) => {
     return (
         <div className="about-me" id="about-me">
             <h1>About me</h1>
-            <h3>My name is Branislav, and I am 17 years old.
+            <h3>My name is Branislav Rendulić.
                 I've been
                 programming since 2018, when I first encountered C language. Since then I started learning new
                 things,
