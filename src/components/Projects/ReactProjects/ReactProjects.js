@@ -7,7 +7,7 @@ const ReactProjects = (props) => {
             id: 1,
             title: 'Shirts Project',
             description: 'React online market where you can create or log in into an existing accout, set up your own cart, order it and see your order history.',
-            tools: ['React.js', 'Redux.js', 'SASS', 'Authentication', 'Firebase'],
+            tools: ['React.js', 'Redux.js', 'SASS', 'Typescript', 'MongoDB'],
             image: 'shirts-project.png',
             websiteURL: 'https://shirts-project.netlify.app',
             codeURL: 'https://github.com/mache4/shirts-project'

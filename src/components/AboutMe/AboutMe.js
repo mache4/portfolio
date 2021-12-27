@@ -1,6 +1,6 @@
 import './AboutMe.scss';
 // import { Link } from 'react-router-dom';
-import Pdf from '../../assets/Branislav-Rendulić-Resume.pdf';
+// import Pdf from '../../assets/Branislav-Rendulić-Resume.pdf';
 
 const AboutMe = (props) => {
     return (
@@ -18,7 +18,7 @@ const AboutMe = (props) => {
             <div className="link-buttons">
                 <button className="linkedin-btn btn" onClick={() => window.open('https://www.linkedin.com/in/branislav-rendulić-9b6411205/')} >LinkedIn</button>
                 <button className="resume-btn btn">
-                    <a className="nav__link" href={Pdf} rel="noreferrer" target="_blank">Resume</a>
+                    {/* <a className="nav__link" href={Pdf} rel="noreferrer" target="_blank">Resume</a> */}
                     {/* <Link to="/resume">Resume</Link> */}
                 </button>
             </div>
