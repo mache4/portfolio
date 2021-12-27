@@ -9,8 +9,8 @@ const ReactProjects = (props) => {
             description: 'React online market where you can create or log in into an existing accout, set up your own cart, order it and see your order history.',
             tools: ['React.js', 'Redux.js', 'SASS', 'Authentication', 'Firebase'],
             image: 'shirts-project.png',
-            websiteURL: 'https://upbeat-johnson-4fd9e5.netlify.app',
-            codeURL: 'https://github.com/rendulicb/shirts-project'
+            websiteURL: 'https://shirts-project.netlify.app',
+            codeURL: 'https://github.com/mache4/shirts-project'
         },
         {
             id: 2,
@@ -19,7 +19,7 @@ const ReactProjects = (props) => {
             tools: ['Next.js', 'Redux.js', 'TypeScript', 'SASS', 'Firebase'],
             image: 'blogs-project.png',
             websiteURL: 'https://blogs-project-nextjs.vercel.app',
-            codeURL: 'https://github.com/rendulicb/blogs-project-nextjs'
+            codeURL: 'https://github.com/mache4/blogs-project'
         },
         {
             id: 3,
@@ -28,7 +28,7 @@ const ReactProjects = (props) => {
             tools: ['React.js', 'Redux.js', 'SASS', 'API'],
             image: 'cinema-project.png',
             websiteURL: 'https://blissful-nobel-3f064d.netlify.app',
-            codeURL: 'https://github.com/rendulicb/cinema-project'
+            codeURL: 'https://github.com/mache4/cinema-project'
         }
     ]);
 
