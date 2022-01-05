@@ -113,13 +113,20 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
     .main {
         padding-top: 10vh;
         align-items: flex-start;
 
         .title {
             padding: 0;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .main {
+        .title {
 
             .title--1 {
                 font-size: 2.25rem;

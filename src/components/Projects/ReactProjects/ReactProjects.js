@@ -24,10 +24,10 @@ const ReactProjects = (props) => {
         {
             id: 3,
             title: 'Cinema Project',
-            description: 'App who is fetching Movie API and displaying its content. You can search for movies or see the most popular ones.',
+            description: 'App fetching Movie API and displaying its content. You can search for movies or see the most popular ones.',
             tools: ['React.js', 'Redux.js', 'SASS', 'API'],
             image: 'cinema-project.png',
-            websiteURL: 'https://blissful-nobel-3f064d.netlify.app',
+            websiteURL: 'https://cinema-proj.netlify.app',
             codeURL: 'https://github.com/mache4/cinema-project'
         }
     ]);

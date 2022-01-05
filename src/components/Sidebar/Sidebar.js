@@ -1,6 +1,7 @@
 import './Sidebar.scss';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'react-router-dom';
+import Pdf from "../../assets/resume.pdf";
 
 const Sidebar = (props) => {
     return (
@@ -22,10 +23,9 @@ const Sidebar = (props) => {
                         onClick={props.clicked}
                         href="#contact-me">Contact</AnchorLink>
                 </li>
-                <li className="nav__item">
-                    <Link to="/resume" className="sidebar__nav__link nav__link btn"
-                        onClick={props.clicked}
-                        href="/resume">Resume</Link></li>
+                <li className="nav__item" onClick={() => window.open(Pdf)}>
+                    <Link className="sidebar__nav__link nav__link btn"
+                        onClick={props.clicked}>Resume</Link></li>
             </ul>
         </div>
     );
