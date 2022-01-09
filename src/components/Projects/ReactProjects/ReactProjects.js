@@ -6,8 +6,8 @@ const ReactProjects = (props) => {
         {
             id: 1,
             title: 'Shirts Project',
-            description: 'React online market where you can create or log in into an existing accout, set up your own cart, order it and see your order history.',
-            tools: ['React.js', 'Redux.js', 'SASS', 'Typescript', 'MongoDB'],
+            description: 'React online market where you can select products and set up your cart, order it and see your order history.',
+            tools: ['React.js', 'Redux.js', 'Typescript', 'SASS', 'MongoDB'],
             image: 'shirts-project.png',
             websiteURL: 'https://shirts-project.netlify.app',
             codeURL: 'https://github.com/mache4/shirts-project'
@@ -15,8 +15,8 @@ const ReactProjects = (props) => {
         {
             id: 2,
             title: 'Blogs Project',
-            description: 'Nextjs app where you can read someones post or create your own.',
-            tools: ['Next.js', 'Redux.js', 'TypeScript', 'SASS', 'Firebase'],
+            description: 'Nextjs app where you can read someones posts or create your own.',
+            tools: ['Next.js', 'Redux.js', 'TypeScript', 'SASS', 'MongoDB'],
             image: 'blogs-project.png',
             websiteURL: 'https://blogs-project-nextjs.vercel.app',
             codeURL: 'https://github.com/mache4/blogs-project'

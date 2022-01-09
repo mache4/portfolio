@@ -1,0 +1,45 @@
+.footer {
+    border-top: 1px solid #fff;
+    padding: 15px;
+    background-color: #071C39;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+
+    .copyright {
+        color: #ccc;
+    }
+
+    .name {
+        font-size: 1.35rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer {
+        .name {
+            font-size: 1.25rem;
+        }
+
+        .copyright {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .footer {
+        .name {
+            font-size: 1rem;
+        }
+
+        .copyright {
+            font-size: 1rem;
+        }
+    }
+}

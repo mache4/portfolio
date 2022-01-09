@@ -4,17 +4,17 @@ import Projects from '../Projects/Projects';
 import AboutMe from '../AboutMe/AboutMe';
 import ContactMe from '../ContactMe/ContactMe';
 import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
 
-const Page = (props) => {
+const Page = () => {
     return (
         <div className="page">
-            <header>
-                <NavBar />
-            </header>
+            <NavBar />
             <Main />
             <Projects />
             <AboutMe />
             <ContactMe />
+            <Footer />
         </div>
     );
 }
