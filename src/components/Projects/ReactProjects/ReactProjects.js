@@ -18,7 +18,7 @@ const ReactProjects = (props) => {
             description: 'Nextjs app where you can read someones posts or create your own.',
             tools: ['Next.js', 'Redux.js', 'TypeScript', 'SASS', 'MongoDB'],
             image: 'blogs-project.png',
-            websiteURL: 'https://blogs-project-nextjs.vercel.app',
+            websiteURL: 'https://blogs-project-red.vercel.app',
             codeURL: 'https://github.com/mache4/blogs-project'
         },
         {
