@@ -56,7 +56,7 @@ const Projects = (props) => {
 
     return (
         <div className="projects section" id="projects">
-            <h1>Projects</h1>
+            <h1>Portfolio</h1>
 
             <div className="project-picker">
                 <Button1

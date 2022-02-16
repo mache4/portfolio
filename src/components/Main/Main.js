@@ -1,7 +1,7 @@
 import './Main.scss';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-const MainSection = (props) => {
+const MainSection = () => {
     return (
         <div className="main section">
             <div className="title">

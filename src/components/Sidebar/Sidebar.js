@@ -19,7 +19,7 @@ const Sidebar = (props) => {
                 </li>
                 <li className="nav__item">
                     <AnchorLink className="sidebar__nav__link nav__link btn"
-                        offset={() => 100}
+                        offset={() => 0}
                         onClick={props.clicked}
                         href="#contact-me">Contact</AnchorLink>
                 </li>

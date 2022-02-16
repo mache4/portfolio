@@ -1,12 +1,11 @@
 import './NavBar.scss';
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-// import { Link } from 'react-router-dom';
 import Overlay from '../Overlay/Overlay';
 import Sidebar from '../Sidebar/Sidebar';
 import Pdf from "../../assets/resume.pdf";
 
-const NavBar = (props) => {
+const NavBar = () => {
     const [sidebar, setSidebar] = useState(false);
 
     const showSidebar = () => {
@@ -24,7 +23,6 @@ const NavBar = (props) => {
                 <li className="nav__item"><AnchorLink className="nav__link" href="#contact-me">Contact</AnchorLink></li>
                 <li className="nav__item">
                     <a className="nav__link" href={Pdf} target="blank">Resume</a>
-                    {/* <a className="nav__link" rel="noreferrer" href={require("../../assets/Branislav-Rendulić-Resume.pdf")} target="blank">Resume</a> */}
                 </li>
             </ul>
 
