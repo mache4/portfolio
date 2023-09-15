@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
-const ReactProjects = (props) => {
+const WebProjects = (props) => {
     const [projects] = useState([
         {
             id: 1,
@@ -14,8 +14,8 @@ const ReactProjects = (props) => {
         },
         {
             id: 2,
-            title: "Blogs Project",
-            description: "Nextjs app where you can read someones posts or create your own.",
+            title: "Blogs",
+            description: "Nextjs app where you can read someones posts and create your own.",
             tools: ["Next.js", "Redux.js", "TypeScript", "SASS", "MongoDB"],
             image: "blogs-project.png",
             websiteURL: "https://blogs-project-red.vercel.app",
@@ -23,8 +23,8 @@ const ReactProjects = (props) => {
         },
         {
             id: 3,
-            title: "Cinema Project",
-            description: "App fetching Movie API and displaying its content. You can search for movies or see the most popular ones.",
+            title: "Cinema",
+            description: "An App fetching Movie API and displaying its content. You can search for movies and see the most popular ones.",
             tools: ["React.js", "Redux.js", "SASS", "API"],
             image: "cinema-project.png",
             websiteURL: "https://cinema-proj.netlify.app",
@@ -66,4 +66,4 @@ const ReactProjects = (props) => {
     );
 }
 
-export default ReactProjects;
+export default WebProjects;

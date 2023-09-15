@@ -3,15 +3,15 @@ import ProjectCard from '../ProjectCard/ProjectCard';
 
 const WebProjects = (props) => {
     const [projects] = useState([
-        {
-            id: 1,
-            title: 'Music Player',
-            description: 'Small app containing 3 songs which you can pause, play or set timer to. You can also switch between songs.',
-            tools: ['HTML', 'CSS', 'JavaScript'],
-            image: 'music-player.png',
-            websiteURL: 'https://boring-bhaskara-d58c92.netlify.app',
-            codeURL: 'https://github.com/mache1/music-player'
-        },
+        // {
+        //     id: 1,
+        //     title: 'Music Player',
+        //     description: 'Small app containing 3 songs which you can pause, play or set timer to. You can also switch between songs.',
+        //     tools: ['HTML', 'CSS', 'JavaScript'],
+        //     image: 'music-player.png',
+        //     websiteURL: 'https://boring-bhaskara-d58c92.netlify.app',
+        //     codeURL: 'https://github.com/mache1/music-player'
+        // },
         {
             id: 2,
             title: 'Dice Game',
@@ -21,15 +21,15 @@ const WebProjects = (props) => {
             websiteURL: 'https://naughty-benz-8b7b17.netlify.app',
             codeURL: 'https://github.com/mache1/dice-game'
         },
-        {
-            id: 3,
-            title: 'Tic Tac Toe',
-            description: 'Tic Tac Toe game created in JavaScript.',
-            tools: ['HTML', 'CSS', 'JavaScript'],
-            image: 'tic-tac-toe.png',
-            websiteURL: 'https://fervent-williams-6dc5a9.netlify.app',
-            codeURL: 'https://github.com/mache1/tic-tac-toe'
-        },
+        // {
+        //     id: 3,
+        //     title: 'Tic Tac Toe',
+        //     description: 'Tic Tac Toe game created in JavaScript.',
+        //     tools: ['HTML', 'CSS', 'JavaScript'],
+        //     image: 'tic-tac-toe.png',
+        //     websiteURL: 'https://fervent-williams-6dc5a9.netlify.app',
+        //     codeURL: 'https://github.com/mache1/tic-tac-toe'
+        // },
     ]);
 
     const useWindowSize = () => {

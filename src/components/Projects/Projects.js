@@ -1,6 +1,6 @@
 import './Projects.scss';
 import ReactProjects from './ReactProjects/ReactProjects';
-import WebProjects from './WebProjects/WebProjects';
+import OtherProjects from './OtherProjects/OtherProjects';
 import { useEffect, useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
@@ -61,14 +61,14 @@ const Projects = (props) => {
             <div className="project-picker">
                 <Button1
                     className="btn-projects btn-projects-react"
-                    onClick={changeActiveHandler}>React Projects</Button1>
+                    onClick={changeActiveHandler}>Web Projects</Button1>
 
                 <Button2
                     className="btn-projects btn-projects-web"
                     onClick={changeActiveHandler}>Other Projects</Button2>
             </div>
             <ReactProjects show={active} />
-            <WebProjects show={active} />
+            <OtherProjects show={active} />
 
             <button className="github-btn" onClick={() => window.open('https://github.com/mache4')}>See More <i className="fab fa-github"></i></button>
             {(useWindowSize() > 1000) && <>
