@@ -6,11 +6,11 @@ const WebProjects = (props) => {
         {
             id: 1,
             title: "Ecommerce",
-            description: "React online market where you can add products to your cart and order them.",
+            description: "Fully functioning ecommerce with features like sorting and categorizing. Customers can add products to their cart, and pay with their credit card.",
             tools: ["React.js", "Redux.js", "Typescript", "TailwindCSS", "Node.js", "Express", "MongoDB", "Stripe"],
             image: "ecommerce.png",
             websiteURL: "https://ecommerce-client-gilt.vercel.app",
-            codeURL: "https://github.com/mache4/shirts-project"
+            codeURL: "https://github.com/mache4/ecommerce"
         },
         {
             id: 2,
