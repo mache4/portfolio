@@ -6,7 +6,7 @@ const MainSection = () => {
         <div className="main section">
             <div className="title">
                 <span className="title--1">Branislav Rendulić.</span>
-                <span className="title--2"><b>Front End Developer</b>.</span>
+                <span className="title--2"><b>Web Developer</b>.</span>
                 <AnchorLink className="view-projects-btn" href="#projects">View Projects</AnchorLink>
             </div>
         </div>
