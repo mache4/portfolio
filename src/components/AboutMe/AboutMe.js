@@ -6,7 +6,7 @@ const AboutMe = () => {
         <div className="about-me" id="about-me">
             <h1>About me</h1>
             <h3>Hello I'm Branislav. I started with programming in 2021, when I first encountered HTML and CSS.
-                After deciding which stack to choose, I chose React/Node. Since then I've worked on some small apps to large-scale web applications.
+                After deciding which stack to choose, I chose React/Node. After one year of studying I started building large-scale web applications.
                 This experience has brought my skills to the next level and allowed me to learn how big applications work.
                 My goal is to become even better every day, and learn from the professionals. I'm currently studying and looking for a job.
             </h3>
